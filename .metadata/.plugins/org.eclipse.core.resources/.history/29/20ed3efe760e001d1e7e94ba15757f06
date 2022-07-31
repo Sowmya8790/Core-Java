@@ -1,0 +1,28 @@
+package Week1;
+
+
+public class ObjectHashcode {
+	
+	int regno;
+	String name;
+	int dep;
+	
+	ObjectHashcode(int regno,String name,int dep)
+	{
+		this.regno=regno;
+		this.name=name;
+		this.dep=dep;
+		
+	}
+
+	public static void main(String[] args) {
+		
+
+		ObjectHashcode oh=new ObjectHashcode(101,"Sowmya",10);
+		ObjectHashcode oh1=new ObjectHashcode(102,"Sowmi",20);
+		
+		oh.equals(oh1);
+		System.out.println(oh.equals(oh1));
+	}
+
+}

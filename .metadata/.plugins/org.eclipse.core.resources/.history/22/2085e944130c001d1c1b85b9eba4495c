@@ -1,0 +1,32 @@
+package Practise;
+
+import java.util.Arrays;
+
+public class SortingElements {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a[]= {50,30,72,83,20,98};
+		
+		
+		System.out.println("The array befor sorting " +Arrays.toString(a));
+		
+	/*	Arrays.parallelSort(a);
+		System.out.println("The element after sorting " +Arrays.toString(a));*/
+		
+		//Approch 2 Using SORT
+		
+		Arrays.sort(a);
+		System.out.println("The elements after sorting :" +Arrays.toString(a));
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

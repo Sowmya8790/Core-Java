@@ -1,0 +1,14 @@
+package test;
+
+public class Bank{
+	
+	int accno;
+	
+	public void checkaccount()
+	{
+		
+
+
+	}
+
+}

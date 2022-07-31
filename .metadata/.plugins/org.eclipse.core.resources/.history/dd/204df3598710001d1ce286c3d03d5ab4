@@ -1,0 +1,30 @@
+package Collections;
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+
+	public static void main(String[] args) {
+		
+		ArrayList list1 = new ArrayList();
+		ArrayList<Integer> list2 = new ArrayList<Integer>();
+		
+		list1.add("Sowmya");
+		list1.add("Lavanya");
+		list2.add(10);
+		list2.add(20);
+		
+		System.out.println("List is this " +list1);
+		System.out.println("The size of the list " +list1.size());
+		System.out.println("List is this " +list2);
+		System.out.println("The size of the list " +list2.size());
+		
+		list2.addAll(list1);
+		
+		System.out.println("Adding list 1 class to list 2 " +list2);
+		
+		
+
+	}
+
+}

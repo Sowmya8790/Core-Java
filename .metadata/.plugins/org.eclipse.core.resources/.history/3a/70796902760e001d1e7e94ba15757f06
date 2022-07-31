@@ -1,0 +1,42 @@
+package Week1;
+
+import java.util.Scanner;
+
+public class ASCII {
+
+	public static void main(String[] args) {
+		
+		int ASCI1 = 'A';
+		int ASCI2 = 'b';
+	
+		
+		
+		for(int i=0;i<=99;i++)
+		{
+			System.out.println((char)i +" "+i);
+		}
+		
+		//Type casting
+		
+		char c1='a';
+		char c2='b';
+		
+		int asci= (int) c1;
+		
+		System.out.println(asci);
+		
+		//
+		Scanner sc = new Scanner(System.in); 
+		
+		char ch = sc.next().charAt(0);
+		
+		int asciiValue = ch;
+		
+		System.out.println(asciiValue);
+		
+		
+	
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package Practise;
+
+public class ArrayRemoveJunk {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s[]= {"@#$%^&!* ling king java 12345678964"};
+		
+		char ch=s.charAt();
+	}
+
+}

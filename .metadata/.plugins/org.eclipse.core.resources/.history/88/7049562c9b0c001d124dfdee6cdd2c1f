@@ -1,0 +1,19 @@
+package Practise;
+
+import java.util.Scanner;
+
+public class CountWordsinString {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		
+		String s= sc.nextLine();
+				
+		String s1[] =s.split(" ");
+		
+		System.out.println("Total no words in the given string :" +s1.length);
+
+	}
+
+}

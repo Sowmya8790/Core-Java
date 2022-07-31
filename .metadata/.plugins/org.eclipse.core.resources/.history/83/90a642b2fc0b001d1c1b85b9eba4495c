@@ -1,0 +1,47 @@
+package Practise;
+
+public class AttayBinarySearch {
+
+	public static void main(String[] args) {
+		
+		// for binary search the elemwnts should be in sorted order then oly we can perform binary search
+		
+	/*	key==mid
+		key>mid l=mid+1
+		key<mid  h=mid-1
+		
+		l should not greater than h*/
+		
+		int a[]= {10,20,30,40,50,60,70,80,90};
+		
+		int l=0;
+		int h=a.length -1;
+		int m=0;
+		int key=80;
+		
+		while(l<=h)
+		{
+			m=(l+h)/2;
+			System.out.println("The mid value is :" +m);
+			
+			if(key==m)
+			{
+				System.out.println("The given number present in the array :" +m);
+				break;
+			}
+			if(key>m)
+			{
+				l=m+1;
+			}
+			if(key<m)
+			{
+				h=m-1;
+			}
+		}
+		System.out.println("The given number not found in array :" +key);
+		
+		
+
+	}
+
+}

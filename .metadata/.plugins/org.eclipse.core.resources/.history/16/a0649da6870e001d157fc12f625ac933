@@ -1,0 +1,50 @@
+package Week1;
+
+
+public class ObjectHashcode {
+	
+	int regno;
+	String name;
+	int dep;
+	
+	ObjectHashcode(int regno,String name,int dep)
+	{
+		this.regno=regno;
+		this.name=name;
+		this.dep=dep;
+		
+	}
+	
+	//Override with equals
+	
+	public boolean equal(Object obj)
+	{
+		if(this==obj)
+		{
+			return true;
+		}
+		if(obj == null || this.getClass() != obj.getClass())
+		{
+			return false;
+		}
+		
+		ObjectHashcode objh = (ObjectHashcode)obj;
+		
+		return this.name.equals(objh.name)
+		&& this.dep == objh.dep;
+		
+	}
+	
+	
+
+	public static void main(String[] args) {
+		
+
+		ObjectHashcode oh=new ObjectHashcode(101,"Sowmya",10);
+		ObjectHashcode oh1=new ObjectHashcode(102,"Sowmya",10);
+		
+		
+		System.out.println(oh.equals(oh1));
+	}
+
+}

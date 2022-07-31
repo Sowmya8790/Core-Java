@@ -1,0 +1,31 @@
+package Week1;
+
+public class AutomorphicNumber {
+	
+	static boolean isAutomorphic(int num) 
+	{
+		int Square = num*num;
+		
+		while(num>0)
+		{
+			if(num%10 == Square%10)
+			return false;
+			num =num/10;
+			Square=Square/10;
+		}
+		return true;
+	}
+	
+
+	
+	
+
+	public static void main(String[] args) {
+		
+		System.out.println(isAutomorphic(76) ? "Automorphic" : "Not Automorphic");
+		System.out.println(isAutomorphic(67) ? "Automorphic" : "Not Automorphic");
+		
+
+	}
+
+}

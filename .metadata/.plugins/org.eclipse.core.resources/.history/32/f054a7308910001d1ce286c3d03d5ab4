@@ -1,0 +1,41 @@
+package Collections;
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> list1 = new ArrayList<String>();
+
+		
+		list1.add("Sowmya");
+		list1.add("Lavanya");
+		list1.add("Sowjanya");
+		list1.add("Gayatri");
+		
+		
+		System.out.println("List is this : " +list1);
+		System.out.println("The size of the list : " +list1.size());
+		
+		
+		list1.remove(2);
+		System.out.println("List is this " +list1);
+		System.out.println("The size of the list : " +list1.size());
+		
+		System.out.println("The 1st element in the list : " +list1.get(1));
+		
+		list1.set(2, "Vyshu");
+		System.out.println("The value updated in list :" +list1);
+		
+		list1.add(2, "Gayatri");
+		System.out.println("Bring back deleted :" +list1);
+		
+		
+		
+		
+		
+
+	}
+
+}

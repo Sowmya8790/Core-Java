@@ -1,0 +1,49 @@
+package Week1;
+
+import java.util.Scanner;
+
+public class PetersonNumber {
+	
+	static int[] fact = new int[] {1,2,6,24,120,720,5040,40320,362880};
+	
+	static boolean peterson(int n)
+	{
+		
+	
+int num=n;
+int temp=num;
+int sum=0;
+
+while(num>0)
+{
+	int digit =num%10;
+	sum = sum+fact[digit];
+	num=num/10;
+}
+
+return(sum==n);
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+		int a=154;
+		
+		if(peterson(a))
+		{
+			System.out.println("It is peterson number");
+		}
+		else
+		{
+			System.out.println("It is not peterson number");
+		}
+		
+		
+	
+		
+
+	}
+
+}

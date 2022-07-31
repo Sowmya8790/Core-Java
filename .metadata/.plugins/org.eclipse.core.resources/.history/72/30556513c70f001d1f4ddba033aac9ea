@@ -1,0 +1,12 @@
+package test;
+
+public class BOABank extends Bank{
+	
+	public int cardnum;
+	
+	public void ccbalance()
+	{
+		System.out.println("Inside cc balance");
+	}
+
+}

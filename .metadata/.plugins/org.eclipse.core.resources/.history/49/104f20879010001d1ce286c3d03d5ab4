@@ -1,0 +1,23 @@
+package Collections;
+
+import java.util.HashMap;
+
+public class MapExample {
+
+	public static void main(String[] args) {
+		
+		HashMap<Integer, String> map1=new HashMap<Integer,String>();
+		
+		map1.put(1, "Sowmya");
+		map1.put(2, "Sri");
+		map1.put(3, "Gayatri");
+		map1.put(4, "Lavanya");
+		map1.put(5, "Vani");
+		map1.put(100, "Babula");
+		map1.put(2, "Sowjanya");
+		
+		System.out.println(map1);
+
+	}
+
+}
