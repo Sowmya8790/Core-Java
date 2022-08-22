@@ -83,6 +83,8 @@ public class AmazonIn {
 	     {
 	    	 System.out.println("The title is not matching");
 	     }
+	     
+	     driver.quit();
 		
 
 	}
